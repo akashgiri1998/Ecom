@@ -1,0 +1,285 @@
+.hero-carousel-section {
+  position: relative;
+  width: 100%;
+}
+
+.slider-wrapper {
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+  .slider-wrapper {
+    height: 480px;
+  }
+}
+
+.slide-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+  transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out;
+  z-index: 1;
+}
+
+.slide-item.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+}
+
+.slide-overlay-content {
+  max-width: 650px;
+  color: var(--color-secondary);
+  animation: slideInUp 0.8s cubic-bezier(0.1, 0.9, 0.2, 1);
+}
+
+.slide-accent-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  background-color: rgba(197, 168, 128, 0.9);
+  color: var(--color-primary);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  margin-bottom: 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+.slide-title {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .slide-title {
+    font-size: 2.2rem;
+  }
+}
+
+.slide-tagline {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  color: var(--color-accent);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .slide-tagline {
+    font-size: 1.1rem;
+  }
+}
+
+.slide-desc {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+  margin-bottom: 35px;
+}
+
+@media (max-width: 768px) {
+  .slide-desc {
+    font-size: 0.85rem;
+    margin-bottom: 25px;
+  }
+}
+
+.slide-cta-btn {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  padding: 14px 32px;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-normal);
+}
+
+.slide-cta-btn:hover {
+  background-color: var(--color-accent);
+  color: var(--color-secondary);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(197, 168, 128, 0.4);
+}
+
+/* Slider Controls */
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: var(--color-secondary);
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  transition: var(--transition-fast);
+}
+
+.slider-arrow:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.arrow-left {
+  left: 30px;
+}
+
+.arrow-right {
+  right: 30px;
+}
+
+@media (max-width: 768px) {
+  .slider-arrow {
+    display: none; /* Hide arrows on mobile, rely on dots */
+  }
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 5;
+}
+
+.dot-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-full);
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: var(--transition-normal);
+}
+
+.dot-indicator.active {
+  background-color: var(--color-accent);
+  width: 24px;
+}
+
+/* Live Flash Sale Banner Panel */
+.flash-sale-banner {
+  background: linear-gradient(135deg, #1f121b 0%, #111111 100%);
+  border-bottom: 2px solid var(--color-sale);
+  color: var(--color-secondary);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 6%;
+  gap: 20px;
+  cursor: pointer;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-normal);
+}
+
+.flash-sale-banner:hover {
+  background: linear-gradient(135deg, #2a1925 0%, #161616 100%);
+}
+
+.flash-title-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.flash-icon {
+  color: var(--color-sale);
+  animation: heartbeat 1.5s infinite;
+}
+
+.flash-label {
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.flash-offer-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.flash-tag {
+  color: var(--color-sale);
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.3rem;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+}
+
+.flash-subtag {
+  font-size: 0.75rem;
+  color: #a0a0a0;
+}
+
+.flash-clock-area {
+  display: flex;
+  align-items: center;
+}
+
+.ends-in {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #a0a0a0;
+  margin-right: 12px;
+}
+
+.clock-digits {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.digit-box {
+  background-color: var(--color-discount);
+  color: var(--color-secondary);
+  font-weight: 800;
+  font-size: 0.95rem;
+  padding: 4px 8px;
+  border-radius: var(--radius-xs);
+  min-width: 32px;
+  text-align: center;
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.clock-separator {
+  color: var(--color-secondary);
+  font-weight: 800;
+}
+
+@media (max-width: 992px) {
+  .flash-sale-banner {
+    justify-content: center;
+    text-align: center;
+    padding: 16px;
+  }
+}
