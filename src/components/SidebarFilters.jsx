@@ -74,7 +74,7 @@ export default function SidebarFilters() {
       <div className="filter-group">
         <div className="price-title-row">
           <h4 className="filter-title">MAX PRICE</h4>
-          <span className="price-bubble">${priceRange}</span>
+          <span className="price-bubble">NRS {priceRange}</span>
         </div>
         <input
           type="range"
@@ -86,8 +86,8 @@ export default function SidebarFilters() {
           className="price-range-slider"
         />
         <div className="range-limits">
-          <span>$10</span>
-          <span>$60</span>
+          <span>NRS 10</span>
+          <span>NRS 6000                             </span>
         </div>
       </div>
 
