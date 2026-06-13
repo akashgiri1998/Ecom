@@ -78,16 +78,16 @@ export default function SidebarFilters() {
         </div>
         <input
           type="range"
-          min="10"
-          max="60"
+          min="500"
+          max="10000"
           step="5"
           value={priceRange}
           onChange={(e) => setPriceRange(Number(e.target.value))}
           className="price-range-slider"
         />
         <div className="range-limits">
-          <span>NRS 100</span>
-          <span>NRS 6000                             </span>
+          <span>NRS 500</span>
+          <span>NRS 10000</span>
         </div>
       </div>
 

@@ -195,7 +195,8 @@ export const products = [
     ],
     images: [
       "https://images.unsplash.com/photo-1617137968427-85924c800a22?w=600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1620012253295-c05cb1e74008?w=600&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1617137968427-85924c800a22?w=600&auto=format&fit=crop",
+
     ],
     description: "Keep it light and airy. The Breeze Coast Linen Shirt is blended with high-grade cotton to minimize wrinkling while offering the signature breathable, relaxed texture of high-end resort wear.",
     details: [
@@ -337,7 +338,7 @@ export const products = [
     ],
     images: [
       "https://images.unsplash.com/photo-1503919545889-aef636e10ad4?w=600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1607990283143-e81e7a2c93ab?w=600&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=600&auto=format&fit=crop"
     ],
     description: "A delightful nautical-themed striped dress featuring a sweet Peter Pan collar, coordinating bloomer shorts (for sizes under 4T), and ultra-soft organic cotton jersey knit.",
     details: [
@@ -365,7 +366,7 @@ export const products = [
       { name: "Retro Orange & Blue", hex: "#e65c00" }
     ],
     images: [
-      "https://images.unsplash.com/photo-1607990283143-e81e7a2c93ab?w=600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=600&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=600&auto=format&fit=crop"
     ],
     description: "A lightweight, shower-resistant windbreaker in a vibrant colorblock design. Features a mesh-lined interior, comfortable elasticized cuffs, and reflective security stripes for low-light safety.",

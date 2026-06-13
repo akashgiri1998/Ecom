@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useShop } from '../context/ShopContext';
 import { Search, Heart, ShoppingBag, User, X, Sparkles, Menu, ArrowRight } from 'lucide-react';
 import './Header.css';
+import Logo from "../../public/favicon.png";
 
 export default function Header() {
   const {
@@ -111,7 +112,7 @@ export default function Header() {
           <div className="logo-section" onClick={() => handleCategoryClick("all")}>
             <span className="logo-brand">AKARIÉN</span>
             <span className="logo-sub">SASTO RAMRO WEAR</span>
-          </div>
+</div>
 
           {/* Desktop Categories */}
           <nav className="desktop-nav">
