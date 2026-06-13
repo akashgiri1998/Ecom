@@ -86,7 +86,7 @@ export default function SidebarFilters() {
           className="price-range-slider"
         />
         <div className="range-limits">
-          <span>NRS 10</span>
+          <span>NRS 100</span>
           <span>NRS 6000                             </span>
         </div>
       </div>
